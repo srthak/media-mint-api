@@ -18,7 +18,7 @@ con.on("open", function () {
 app.use(express.json());
 
 app.use(cors());
-let page = 1;
+let page = 0;
 
 app.post("/storeUserInMyDatabase", async (req, res) => {
   try {
